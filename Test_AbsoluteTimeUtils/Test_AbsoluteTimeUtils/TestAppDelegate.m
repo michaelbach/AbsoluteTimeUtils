@@ -26,6 +26,7 @@ AbsoluteTimeUtils *t;
 #pragma unused (timer)
 	[self setCounter: [self counter]+1];
 	[self setDeltaT: [t elapsedMillisecondsAndReset]];
+	[self setMeanDeltaT: ([self meanDeltaT]*([self counter]-1) + [self deltaT])/[self counter]];
 //	[self setDeltaT: [t elapsedSecondsAndReset]];
 }
 

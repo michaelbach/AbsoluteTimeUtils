@@ -15,6 +15,7 @@
 @property (assign) IBOutlet NSWindow *window;
 @property (readwrite) NSUInteger counter;
 @property (readwrite) CGFloat deltaT;
+@property (readwrite) CGFloat meanDeltaT;
 
 
 @end
